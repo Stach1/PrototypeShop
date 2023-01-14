@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_8
+      name: CharUp1
       rect:
         serializedVersion: 2
         x: 1
@@ -125,7 +125,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_9
+      name: CharUpRight1
       rect:
         serializedVersion: 2
         x: 17
@@ -146,7 +146,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_10
+      name: CharRight1
       rect:
         serializedVersion: 2
         x: 34
@@ -167,7 +167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_11
+      name: CharDownRight1
       rect:
         serializedVersion: 2
         x: 50
@@ -188,7 +188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_12
+      name: CharDown1
       rect:
         serializedVersion: 2
         x: 65
@@ -209,7 +209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_13
+      name: CharDownLeft1
       rect:
         serializedVersion: 2
         x: 81
@@ -230,7 +230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_14
+      name: CharLeft1
       rect:
         serializedVersion: 2
         x: 98
@@ -251,7 +251,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_15
+      name: CharUpLeft1
       rect:
         serializedVersion: 2
         x: 114
@@ -272,7 +272,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_16
+      name: CharUp2
       rect:
         serializedVersion: 2
         x: 1
@@ -293,7 +293,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_17
+      name: CharUpRight2
       rect:
         serializedVersion: 2
         x: 18
@@ -314,7 +314,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_18
+      name: CharRight2
       rect:
         serializedVersion: 2
         x: 34
@@ -335,7 +335,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_19
+      name: CharDownRight2
       rect:
         serializedVersion: 2
         x: 50
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_20
+      name: CharDown2
       rect:
         serializedVersion: 2
         x: 65
@@ -377,7 +377,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_21
+      name: CharDownLeft2
       rect:
         serializedVersion: 2
         x: 82
@@ -398,7 +398,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_22
+      name: CharLeft2
       rect:
         serializedVersion: 2
         x: 98
@@ -419,7 +419,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_23
+      name: CharUpLeft2
       rect:
         serializedVersion: 2
         x: 114
@@ -440,7 +440,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_24
+      name: CharUp3
       rect:
         serializedVersion: 2
         x: 1
@@ -461,7 +461,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_25
+      name: CharUpRight3
       rect:
         serializedVersion: 2
         x: 18
@@ -482,7 +482,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_26
+      name: CharRight3
       rect:
         serializedVersion: 2
         x: 34
@@ -503,7 +503,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_27
+      name: CharDownRight3
       rect:
         serializedVersion: 2
         x: 49
@@ -524,7 +524,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_28
+      name: CharDown3
       rect:
         serializedVersion: 2
         x: 65
@@ -545,7 +545,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_29
+      name: CharDownLeft3
       rect:
         serializedVersion: 2
         x: 82
@@ -566,7 +566,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_30
+      name: CharLeft3
       rect:
         serializedVersion: 2
         x: 98
@@ -587,7 +587,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_31
+      name: CharUpLeft3
       rect:
         serializedVersion: 2
         x: 113
@@ -621,13 +621,14 @@ TextureImporter:
       Small-8-Direction-Characters_by_AxulArt_42: -2113404136
       Small-8-Direction-Characters_by_AxulArt_65: 47804002
       Small-8-Direction-Characters_by_AxulArt_32: -1632599082
+      CharUp2: 1625475226
       Small-8-Direction-Characters_by_AxulArt_59: 1299325855
       Small-8-Direction-Characters_by_AxulArt_38: 911202857
-      Small-8-Direction-Characters_by_AxulArt_12: -2108320794
-      Small-8-Direction-Characters_by_AxulArt_14: -1404558371
+      CharUp1: -751138455
+      CharDownLeft2: 1435881090
+      CharLeft3: -1055454796
       Small-8-Direction-Characters_by_AxulArt_45: -1788605009
       Small-8-Direction-Characters_by_AxulArt_80: 161045969
-      Small-8-Direction-Characters_by_AxulArt_10: -81970408
       Small-8-Direction-Characters_by_AxulArt_50: 994464124
       Small-8-Direction-Characters_by_AxulArt_2: 2113869900
       Small-8-Direction-Characters_by_AxulArt_63: 1882992076
@@ -635,84 +636,83 @@ TextureImporter:
       Small-8-Direction-Characters_by_AxulArt_49: -301702281
       Small-8-Direction-Characters_by_AxulArt_53: -733132442
       Small-8-Direction-Characters_by_AxulArt_87: 754612773
-      Small-8-Direction-Characters_by_AxulArt_18: 1910783106
       Small-8-Direction-Characters_by_AxulArt_60: 1263065987
-      Small-8-Direction-Characters_by_AxulArt_11: 875174187
+      CharDownLeft1: -920414784
       Small-8-Direction-Characters_by_AxulArt_91: 389318585
       Small-8-Direction-Characters_by_AxulArt_89: 1931557963
       Small-8-Direction-Characters_by_AxulArt_39: 138617956
+      CharDownRight2: -271008053
       Small-8-Direction-Characters_by_AxulArt_94: -587840914
       Small-8-Direction-Characters_by_AxulArt_67: 206212873
-      Small-8-Direction-Characters_by_AxulArt_16: 1625475226
+      CharUpRight1: 1550471173
       Small-8-Direction-Characters_by_AxulArt_86: -1452797179
       Small-8-Direction-Characters_by_AxulArt_43: 894088204
       Small-8-Direction-Characters_by_AxulArt_76: 1679126852
       Small-8-Direction-Characters_by_AxulArt_62: -1002000807
-      Small-8-Direction-Characters_by_AxulArt_8: -751138455
+      CharDownRight1: 875174187
+      CharUpLeft3: 1342477057
       Small-8-Direction-Characters_by_AxulArt_3: 166034409
       Small-8-Direction-Characters_by_AxulArt_44: 425663280
       Small-8-Direction-Characters_by_AxulArt_64: -98687380
       Small-8-Direction-Characters_by_AxulArt_73: 1599727016
+      CharDown1: -2108320794
       Small-8-Direction-Characters_by_AxulArt_0: -932496078
       Small-8-Direction-Characters_by_AxulArt_70: -321390359
-      Small-8-Direction-Characters_by_AxulArt_17: 168024203
       Small-8-Direction-Characters_by_AxulArt_34: -1342991430
       Small-8-Direction-Characters_by_AxulArt_48: -540885127
-      Small-8-Direction-Characters_by_AxulArt_24: -908871217
+      CharRight2: 1910783106
+      CharUp3: -908871217
       Small-8-Direction-Characters_by_AxulArt_88: 1030594513
-      Small-8-Direction-Characters_by_AxulArt_20: 1287370512
-      Small-8-Direction-Characters_by_AxulArt_27: -804243668
       Small-8-Direction-Characters_by_AxulArt_54: -178728028
       Small-8-Direction-Characters_by_AxulArt_69: -1003805875
-      Small-8-Direction-Characters_by_AxulArt_29: 1018518351
       Small-8-Direction-Characters_by_AxulArt_35: 849169869
-      Small-8-Direction-Characters_by_AxulArt_31: 1342477057
+      CharDownRight3: -804243668
       Small-8-Direction-Characters_by_AxulArt_51: 248483340
       Small-8-Direction-Characters_by_AxulArt_82: -493454004
-      Small-8-Direction-Characters_by_AxulArt_26: -755674736
-      Small-8-Direction-Characters_by_AxulArt_21: 1435881090
       Small-8-Direction-Characters_by_AxulArt_95: -810972947
       Small-8-Direction-Characters_by_AxulArt_85: 592117379
+      CharUpLeft2: -1614735981
       Small-8-Direction-Characters_by_AxulArt_56: 1288889134
       Small-8-Direction-Characters_by_AxulArt_68: -455560381
       Small-8-Direction-Characters_by_AxulArt_77: -609875433
-      Small-8-Direction-Characters_by_AxulArt_28: -53086211
       Small-8-Direction-Characters_by_AxulArt_47: 313855966
       Small-8-Direction-Characters_by_AxulArt_84: 2111152485
       Small-8-Direction-Characters_by_AxulArt_58: 2010271363
       Small-8-Direction-Characters_by_AxulArt_37: 1464068151
       Small-8-Direction-Characters_by_AxulArt_57: -1883488870
       Small-8-Direction-Characters_by_AxulArt_90: -1497653296
-      Small-8-Direction-Characters_by_AxulArt_30: -1055454796
+      CharRight3: -755674736
       Small-8-Direction-Characters_by_AxulArt_6: -1748294002
+      CharDown3: -53086211
       Small-8-Direction-Characters_by_AxulArt_55: 944826579
+      CharDown2: 1287370512
+      CharUpRight3: -1659752600
       Small-8-Direction-Characters_by_AxulArt_78: 522097432
       Small-8-Direction-Characters_by_AxulArt_1: 302107667
       Small-8-Direction-Characters_by_AxulArt_33: -2127180308
-      Small-8-Direction-Characters_by_AxulArt_19: -271008053
+      CharDownLeft3: 1018518351
       Small-8-Direction-Characters_by_AxulArt_93: 1166562407
-      Small-8-Direction-Characters_by_AxulArt_13: -920414784
-      Small-8-Direction-Characters_by_AxulArt_23: -1614735981
+      CharUpRight2: 168024203
+      CharLeft2: -704655297
       Small-8-Direction-Characters_by_AxulArt_74: 835023078
       Small-8-Direction-Characters_by_AxulArt_61: 655582590
+      CharUpLeft1: -1091446943
       Small-8-Direction-Characters_by_AxulArt_79: -1983780722
       Small-8-Direction-Characters_by_AxulArt_83: -158986100
       Small-8-Direction-Characters_by_AxulArt_81: -1643139199
-      Small-8-Direction-Characters_by_AxulArt_22: -704655297
-      Small-8-Direction-Characters_by_AxulArt_7: -1377854140
-      Small-8-Direction-Characters_by_AxulArt_36: -1297704726
-      Small-8-Direction-Characters_by_AxulArt_40: 1445348775
-      Small-8-Direction-Characters_by_AxulArt_15: -1091446943
-      Small-8-Direction-Characters_by_AxulArt_41: 1778898269
       Small-8-Direction-Characters_by_AxulArt_46: 1241268630
       Small-8-Direction-Characters_by_AxulArt_4: -93005855
+      Small-8-Direction-Characters_by_AxulArt_36: -1297704726
+      Small-8-Direction-Characters_by_AxulArt_40: 1445348775
+      Small-8-Direction-Characters_by_AxulArt_41: 1778898269
+      Small-8-Direction-Characters_by_AxulArt_7: -1377854140
+      CharLeft1: -1404558371
       Small-8-Direction-Characters_by_AxulArt_52: -844034658
-      Small-8-Direction-Characters_by_AxulArt_9: 1550471173
-      Small-8-Direction-Characters_by_AxulArt_25: -1659752600
       Small-8-Direction-Characters_by_AxulArt_72: 756582652
+      CharRight1: -81970408
       Small-8-Direction-Characters_by_AxulArt_66: -121146725
-      Small-8-Direction-Characters_by_AxulArt_75: -1643305834
       Small-8-Direction-Characters_by_AxulArt_92: -765950083
+      Small-8-Direction-Characters_by_AxulArt_75: -1643305834
       Small-8-Direction-Characters_by_AxulArt_5: 1362691012
   spritePackingTag: 
   pSDRemoveMatte: 0
