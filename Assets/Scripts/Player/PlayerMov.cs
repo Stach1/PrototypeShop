@@ -66,4 +66,10 @@ public class PlayerMov : MonoBehaviour
         // Last mov input gets saved here
         if (_isIdle) _anim.SetBool("isMoving", false); else { _anim.SetBool("isMoving", true); _lastMovInput = _movInput; }
     }
+
+    // Returns mov input (Will use this for the cosmetic animations)
+    public Vector2 GetInput()
+    {
+        return _lastMovInput;
+    }
 }
