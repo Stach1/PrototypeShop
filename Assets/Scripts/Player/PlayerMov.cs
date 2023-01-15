@@ -30,6 +30,9 @@ public class PlayerMov : MonoBehaviour
 
     private void Update()
     {
+        // Quit the game button
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
+
         MoveInput();
         //Flips character!
         Flip();
