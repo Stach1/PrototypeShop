@@ -31,9 +31,12 @@ public class PlayerMov : MonoBehaviour
     private void Update()
     {
         MoveInput();
+        //Flips character!
+        Flip();
+        //Checks which state the animation is in and sets which animation that's gonna play
         var state = AnimateState();
         _anim.CrossFade(state, 0, 0);
-        Flip();
+        
     }
 
     private void FixedUpdate()
@@ -57,6 +60,7 @@ public class PlayerMov : MonoBehaviour
     {
         // Will check whether player is moving or not for the walk animation
         return _movInput == Vector2.zero ? Idle : Walk;
+
     }
 
     void Flip()
@@ -64,5 +68,11 @@ public class PlayerMov : MonoBehaviour
         // Flips character
         if (_movInput.x > 0) transform.localScale = new Vector2(_characterScale.x, _characterScale.y); 
         else if(_movInput.x < 0) transform.localScale = new Vector2(-_characterScale.x, _characterScale.y);
+    }
+
+
+    public Vector2 GetInput()
+    {
+        return _movInput;
     }
 }
