@@ -19,8 +19,6 @@ public class InventorySlot : MonoBehaviour
     // Sprites from the body part
     private SpriteResolver[] _sprites;
 
-    // Changes sprite for the headgear obj
-    private SpriteRenderer _headSprite;
     
     public void ChangeCloth()
     {
@@ -58,7 +56,10 @@ public class InventorySlot : MonoBehaviour
         // Changes character sprite by changing the category of the item + the color
         foreach (SpriteResolver sprite in _sprites)
         {
-            sprite.SetCategoryAndLabel(sprite.GetCategory(), color);
+            // If the current player's color is equals to the item's color, then it'll reset back to default.
+            // Otherwise, change to the item's color.
+            if(sprite.GetLabel() == color) sprite.SetCategoryAndLabel(sprite.GetCategory(), "White");
+            else sprite.SetCategoryAndLabel(sprite.GetCategory(), color);
         }
 
         }
