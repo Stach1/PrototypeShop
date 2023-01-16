@@ -13,8 +13,6 @@ public class InventoryItem : MonoBehaviour
     // Image for the item
     private Image _image;
 
-    private int _itemID;
-
     private void Awake()
     {
         // UI Image inside the slot
@@ -26,7 +24,6 @@ public class InventoryItem : MonoBehaviour
     {
         item = newItem;
         _image.sprite = newItem.icon;
-        _itemID = newItem.id;
     }
 
 }

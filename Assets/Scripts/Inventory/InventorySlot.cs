@@ -24,7 +24,9 @@ public class InventorySlot : MonoBehaviour
     {
         // Item in slot
         InventoryItem itemInSlot = GetComponentInChildren<InventoryItem>();
-
+        
+        // Sell button
+        Sell sellvar = GetComponentInChildren<Sell>();
         
 
         if (itemInSlot != null)
@@ -58,10 +60,13 @@ public class InventorySlot : MonoBehaviour
         {
             // If the current player's color is equals to the item's color, then it'll reset back to default.
             // Otherwise, change to the item's color.
+            // Also checks if it's wearing the item, if it is then item's color will reset back to default
             if(sprite.GetLabel() == color) sprite.SetCategoryAndLabel(sprite.GetCategory(), "White");
-            else sprite.SetCategoryAndLabel(sprite.GetCategory(), color);
+            else if(!sellvar.beingSold) sprite.SetCategoryAndLabel(sprite.GetCategory(), color);
         }
 
         }
     }
+
 }
+

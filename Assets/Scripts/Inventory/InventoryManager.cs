@@ -16,23 +16,20 @@ public class InventoryManager : MonoBehaviour
     [SerializeField]
     private Item[] _defaultClothes;
 
-    private void Awake()
-    {
-        for(int i = 0; i < _defaultClothes.Length; i++) AddItem(_defaultClothes[i], true);
-    }
-
     public void AddItem(Item item, bool isDefault)
     {
         // Will check every inventory slot
-        for(int i = 0; i < _inventorySlots.Length; i++)
+        for (int i = 0; i < _inventorySlots.Length; i++)
         {
             // Temporary variable for current slot
             InventorySlot slot = _inventorySlots[i];
             // Gets the item from child
             InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
 
+            if (isDefault) return;
+
             // Will check every slot until there's a null one
-            if(itemInSlot == null)
+            else if (itemInSlot == null)
             {
                 SpawnNewItem(item, slot, isDefault);
                 return;
@@ -57,6 +54,19 @@ public class InventoryManager : MonoBehaviour
         inventoryItem.InitialiseItem(item);
     }
 
+    // For the inventory button
+    // When player presses the inventory button
+    // First two slots will be default clothes
+    public void SetDefault()
+    {
+        SpawnNewItem(_defaultClothes[0], _inventorySlots[0], true);
+        SpawnNewItem(_defaultClothes[1], _inventorySlots[1], true);
+
+    }
+
+
+
+    // Unused for now
     public void RemoveItem(Item item)
     {
         // Will check every inventory slot
@@ -81,3 +91,4 @@ public class InventoryManager : MonoBehaviour
     }
 
 }
+
