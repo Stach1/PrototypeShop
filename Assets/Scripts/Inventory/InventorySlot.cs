@@ -18,6 +18,9 @@ public class InventorySlot : MonoBehaviour
 
     // Sprites from the body part
     private SpriteResolver[] _sprites;
+
+    // Changes sprite for the headgear obj
+    private SpriteRenderer _headSprite;
     
     public void ChangeCloth()
     {
@@ -39,23 +42,25 @@ public class InventorySlot : MonoBehaviour
                     _correctBodyPart = _bodyParts[1];
                     break;
 
+                // Takes the sprite renderer for the headgear obj
                 case Item.ItemCategory.Headgear:
                     _correctBodyPart = _bodyParts[2];
                     break;
 
             }
 
-            // Gets the sprite resolvers from the body part
-            _sprites = _correctBodyPart.GetComponentsInChildren<SpriteResolver>();
+        // Gets the sprite resolvers from the body part
+        _sprites = _correctBodyPart.GetComponentsInChildren<SpriteResolver>();
 
-            // The item's color
-            var color = itemInSlot.item.color.ToString();
+        // The item's color
+        var color = itemInSlot.item.color.ToString();
 
-            // Changes character sprite to the one input in the function
-            foreach (SpriteResolver sprite in _sprites)
-            {
-                sprite.SetCategoryAndLabel(sprite.GetCategory(), color);
-            }
+        // Changes character sprite by changing the category of the item + the color
+        foreach (SpriteResolver sprite in _sprites)
+        {
+            sprite.SetCategoryAndLabel(sprite.GetCategory(), color);
+        }
+
         }
     }
 }

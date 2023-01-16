@@ -42,19 +42,4 @@ public class InventoryManager : MonoBehaviour
         inventoryItem.InitialiseItem(item);
     }
 
-    public Item GetSelectedItem()
-    {
-        InventorySlot slot = inventorySlots[0];
-
-        // Gets the item from child
-        InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
-
-        // Will check every slot until there's a null one
-        if (itemInSlot != null)
-        {
-            return itemInSlot.item;
-        }
-
-        return null;
-    }
 }
