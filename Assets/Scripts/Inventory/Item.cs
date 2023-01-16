@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,14 +6,23 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObject/Item")]  
 public class Item : ScriptableObject
 {
+    public int id;
     public Sprite icon;
-    public ItemType type;
+    public ItemCategory category;
+    public ItemColor color;
     public float startingPrice;
 
-    public enum ItemType
+    public enum ItemCategory
     {
         Headgear,
         Bodywear,
         Footwear
     }
+
+    public enum ItemColor
+    {
+        White,
+        Red
+    }
+
 }

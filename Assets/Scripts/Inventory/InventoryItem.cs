@@ -3,21 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// This script goes in the child for the inventory slot
 public class InventoryItem : MonoBehaviour
 {
-    [HideInInspector]
-    public Item Item;
     
+    [HideInInspector]
+    public Item item;
+    
+    // Image for the item
     private Image _image;
 
     private void Awake()
     {
+        // UI Image inside the slot
         _image = GetComponent<Image>();
     }
 
+    // Creates item with image in it
     public void InitialiseItem(Item newItem)
     {
-        Item = newItem;
+        item = newItem;
         _image.sprite = newItem.icon;
+
     }
+
+
 }
