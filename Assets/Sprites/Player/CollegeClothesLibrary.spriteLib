@@ -104,9 +104,9 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 2855549224809411973, guid: 389d2366e1db64147aa81dd92ed3e4dd, type: 3}
     - m_Name: Red
       m_Hash: -1037297297
-      m_Sprite: {fileID: -7073761002691195291, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
+      m_Sprite: {fileID: 2925550475873614882, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -7073761002691195291, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
+      m_SpriteOverride: {fileID: 2925550475873614882, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 2
   - m_Name: Leg Back Up
@@ -120,9 +120,9 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 2159769904527706364, guid: 389d2366e1db64147aa81dd92ed3e4dd, type: 3}
     - m_Name: Red
       m_Hash: -1037297297
-      m_Sprite: {fileID: -2521364052228591381, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
+      m_Sprite: {fileID: 3171674304290221406, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -2521364052228591381, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
+      m_SpriteOverride: {fileID: 3171674304290221406, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 2
   - m_Name: Leg Front Down
@@ -152,9 +152,9 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 2108672747927987524, guid: 389d2366e1db64147aa81dd92ed3e4dd, type: 3}
     - m_Name: Red
       m_Hash: -1037297297
-      m_Sprite: {fileID: 5509385299034374238, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
+      m_Sprite: {fileID: -5860347364202805317, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 5509385299034374238, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
+      m_SpriteOverride: {fileID: -5860347364202805317, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 2
   - m_Name: Hair Side

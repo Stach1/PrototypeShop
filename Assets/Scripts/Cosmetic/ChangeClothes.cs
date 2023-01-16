@@ -34,7 +34,7 @@ public class ChangeClothes : MonoBehaviour
 
     public void ChangeCloth(string item)
     {
-        // Changes character sprite to the one written in the function
+        // Changes character sprite to the one input in the function
         foreach (SpriteResolver sprite in _sprites)
         {
             sprite.SetCategoryAndLabel(sprite.GetCategory(), item);
