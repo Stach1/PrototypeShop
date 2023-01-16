@@ -67,7 +67,7 @@ public class InventoryManager : MonoBehaviour
 
 
     // Unused for now
-    public void RemoveItem(Item item)
+    /*public void RemoveItem(Item item)
     {
         // Will check every inventory slot
         for (int i = 0; i < _inventorySlots.Length; i++)
@@ -88,7 +88,7 @@ public class InventoryManager : MonoBehaviour
             }
 
         }
-    }
+    }*/
 
 }
 

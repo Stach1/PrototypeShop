@@ -6,20 +6,31 @@ public class Sell : MonoBehaviour
 {
 
     [SerializeField]
-    private InventoryManager _inventoryManager;
+    private MoneyManager _moneyManager;
 
     private InventorySlot _inventorySlot;
 
+    [HideInInspector]
     public bool beingSold;
 
     // When button pressed, sells item and deletes it from inventory
     public void SellItem()
     {
-        _inventorySlot = transform.parent.parent.GetComponent<InventorySlot>();
-        beingSold = true;
-        _inventorySlot.ChangeCloth();
-        // Item in slot
-        InventoryItem itemInSlot = GetComponentInParent<InventoryItem>();
-        Destroy(itemInSlot.gameObject);
-    }
+            // Changes clothing in case you sell an item you're already using,
+            // Currently takes the inventory slot object to use the function
+            _inventorySlot = GetComponent<InventorySlot>();
+            beingSold = true;
+            _inventorySlot.ChangeCloth();
+
+            // Item in slot
+            InventoryItem itemInSlot = GetComponentInChildren<InventoryItem>();
+
+            // Adds coins whenever item is sold
+            _moneyManager.AddCoins(itemInSlot.item.startingPrice);
+            
+            //Removes item from inventory
+            Destroy(itemInSlot.gameObject);
+        }
+ 
 }
+

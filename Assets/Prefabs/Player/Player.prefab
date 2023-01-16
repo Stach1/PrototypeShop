@@ -1371,7 +1371,7 @@ GameObject:
   - component: {fileID: 5499549328891847814}
   - component: {fileID: 5499549328891847813}
   - component: {fileID: 5499549328891847815}
-  - component: {fileID: 5499549328891847808}
+  - component: {fileID: 1972762014}
   m_Layer: 0
   m_Name: Headgear
   m_TagString: Untagged
@@ -1435,15 +1435,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 4e4aab56488128341845c4d24d70107f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4, y: 1.5}
+  m_Size: {x: 0.935, y: 0.15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &5499549328891847815
@@ -1454,7 +1454,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5499549328891847812}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 22100000, guid: b721486009813334a8523b32054c645b, type: 2}
   m_CullingMode: 0
@@ -1466,7 +1466,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5499549328891847808
+--- !u!114 &1972762014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1475,10 +1475,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5499549328891847812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8131cc85037fe954598bcfdb58d88e05, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pMovScript: {fileID: 5499549330443976921}
+  m_CategoryHash: 0
+  m_labelHash: 0
+  m_SpriteKey: 2.4832297e-23
 --- !u!1 &5499549329563683988
 GameObject:
   m_ObjectHideFlags: 0

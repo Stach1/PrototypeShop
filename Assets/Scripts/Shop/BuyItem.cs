@@ -5,7 +5,9 @@ using UnityEngine;
 public class BuyItem : MonoBehaviour
 {
     [SerializeField]
-    private InventoryManager inventoryManager;
+    private InventoryManager _inventoryManager;
+    [SerializeField]
+    private MoneyManager _moneyManager;
     
     //Items list in shop buttons
     [SerializeField]
@@ -14,7 +16,8 @@ public class BuyItem : MonoBehaviour
     // When button pressed, adds item to inventory
     public void Purchase(int id)
     {
-        inventoryManager.AddItem(itemsToBuy[id], false);
+        _inventoryManager.AddItem(itemsToBuy[id], false);
+        _moneyManager.RemoveCoins(itemsToBuy[id].startingPrice);
     }
 
     

@@ -19,7 +19,22 @@ public class InventorySlot : MonoBehaviour
     // Sprites from the body part
     private SpriteResolver[] _sprites;
 
+    private GameObject _sellButton;
     
+    public void ShowButton()
+    {
+        // Item in slot
+        InventoryItem itemInSlot = GetComponentInChildren<InventoryItem>();
+
+        if (itemInSlot != null)
+        {
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(true);
+            }
+        }
+    }
+
     public void ChangeCloth()
     {
         // Item in slot
@@ -28,6 +43,7 @@ public class InventorySlot : MonoBehaviour
         // Sell button
         Sell sellvar = GetComponentInChildren<Sell>();
         
+
 
         if (itemInSlot != null)
         {
