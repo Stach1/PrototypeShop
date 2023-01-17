@@ -5,17 +5,19 @@ using UnityEngine;
 public class TriggerShop : MonoBehaviour
 {
     [SerializeField]
-    private GameObject optionsObj;
+    private GameObject _optionsObj;
+    [SerializeField]
+    private GameObject _inventoryButton;
 
     public void Options() {
-        optionsObj.SetActive(true);
+        _optionsObj.SetActive(true);
+        _inventoryButton.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Test");
             Options();
         }
     }
