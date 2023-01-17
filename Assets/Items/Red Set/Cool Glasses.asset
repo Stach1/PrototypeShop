@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Cool Glasses
   m_EditorClassIdentifier: 
   id: 4
+  itemName: Cool Glasses
   icon: {fileID: 21300000, guid: 88e6a08ab8891064ca2efec58c61b4e8, type: 3}
   category: 0
   color: 1

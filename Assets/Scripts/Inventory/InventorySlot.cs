@@ -1,12 +1,15 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // Sprite resolver library
 using UnityEngine.U2D.Animation;
 
 public class InventorySlot : MonoBehaviour
 {
+    // Inventory Slot Id
+    public int id;
     // List of all body parts
     [SerializeField]
     private GameObject[] _bodyParts;
@@ -19,29 +22,34 @@ public class InventorySlot : MonoBehaviour
     // Sprites from the body part
     private SpriteResolver[] _sprites;
 
-    private GameObject _sellButton;
-    
-    public void ShowButton()
-    {
-        // Item in slot
-        InventoryItem itemInSlot = GetComponentInChildren<InventoryItem>();
+    // The slot image, will be changed if selected
+    private Image _image;
+    [SerializeField]
+    private Color _selectedColor, _unselectedColor;
 
-        if (itemInSlot != null)
-        {
-            foreach (Transform child in transform)
-            {
-                child.gameObject.SetActive(true);
-            }
-        }
+    // Gets the sell script from the button
+    [SerializeField]
+    private Sell _sellScript;
+
+    private void Awake()
+    {
+        _image = GetComponent<Image>();
+    }
+
+    public void Select()
+    {
+        _image.color = _selectedColor;
+    }
+
+    public void Deselect()
+    {
+        _image.color = _unselectedColor;
     }
 
     public void ChangeCloth()
     {
         // Item in slot
         InventoryItem itemInSlot = GetComponentInChildren<InventoryItem>();
-        
-        // Sell button
-        Sell sellvar = GetComponentInChildren<Sell>();
         
 
 
@@ -76,9 +84,10 @@ public class InventorySlot : MonoBehaviour
         {
             // If the current player's color is equals to the item's color, then it'll reset back to default.
             // Otherwise, change to the item's color.
-            // Also checks if it's wearing the item, if it is then item's color will reset back to default
+            // Also checks if it's wearing the item while selling it.
+            // If it is then item's color will reset back to default
             if(sprite.GetLabel() == color) sprite.SetCategoryAndLabel(sprite.GetCategory(), "White");
-            else if(!sellvar.beingSold) sprite.SetCategoryAndLabel(sprite.GetCategory(), color);
+            else if(!_sellScript.beingSold) sprite.SetCategoryAndLabel(sprite.GetCategory(), color);
         }
 
         }

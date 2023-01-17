@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Red Pants
   m_EditorClassIdentifier: 
   id: 2
+  itemName: Red Pants
   icon: {fileID: 21300000, guid: 49a38a7d7f8574843b6801a5e959459d, type: 3}
   category: 2
   color: 1

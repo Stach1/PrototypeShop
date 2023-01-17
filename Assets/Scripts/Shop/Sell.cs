@@ -7,30 +7,39 @@ public class Sell : MonoBehaviour
 
     [SerializeField]
     private MoneyManager _moneyManager;
+    [SerializeField]
+    private InventoryManager _inventoryManager;
 
-    private InventorySlot _inventorySlot;
-
-    [HideInInspector]
-    public bool beingSold;
+    public bool beingSold = false;
 
     // When button pressed, sells item and deletes it from inventory
     public void SellItem()
     {
-            // Changes clothing in case you sell an item you're already using,
-            // Currently takes the inventory slot object to use the function
-            _inventorySlot = GetComponent<InventorySlot>();
+        // Gets selected slot
+        InventorySlot slot = _inventoryManager.GetSelectedItem();
+
+        // The item in the slot
+        InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
+
+
+        if (itemInSlot != null)
+        {
+            // This variable is required for the check in Inventory Slot;
             beingSold = true;
-            _inventorySlot.ChangeCloth();
-
-            // Item in slot
-            InventoryItem itemInSlot = GetComponentInChildren<InventoryItem>();
-
             // Adds coins whenever item is sold
             _moneyManager.AddCoins(itemInSlot.item.startingPrice);
-            
-            //Removes item from inventory
+
+            // Function will check if user is using the cloth or not before destroying
+            // If they are then it's gonna change to default, otherwise it'll stay the 
+            // current cloth
+            slot.ChangeCloth();
+
+            // Destroys item from slot
             Destroy(itemInSlot.gameObject);
         }
+
+        beingSold = false;
+    }
  
 }
 

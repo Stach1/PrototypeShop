@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: White Pants
   m_EditorClassIdentifier: 
   id: 1
+  itemName: White Pants
   icon: {fileID: 21300000, guid: e20fb1457292e114fb0109ff5f26b733, type: 3}
   category: 2
-  type: 0
+  color: 0
   startingPrice: 0

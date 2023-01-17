@@ -16,8 +16,24 @@ public class BuyItem : MonoBehaviour
     // When button pressed, adds item to inventory
     public void Purchase(int id)
     {
-        _inventoryManager.AddItem(itemsToBuy[id], false);
-        _moneyManager.RemoveCoins(itemsToBuy[id].startingPrice);
+        // If you have enough money, buys item
+        if (_moneyManager.RemoveCoins(itemsToBuy[id].startingPrice))
+        {
+            //If you have inventory space, adds item
+            if (_inventoryManager.AddItem(itemsToBuy[id]))
+            {
+                Debug.Log(itemsToBuy[id].name + " Bought!");
+                _inventoryManager.GetSelectedItem().ChangeCloth();
+                
+            }
+            else
+            {
+                // Adds money back up if inventory is full
+                _moneyManager.AddCoins(itemsToBuy[id].startingPrice); Debug.Log("Inventory Full");
+            }
+
+        }
+        else Debug.Log("You don't have enough money!");
     }
 
     

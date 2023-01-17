@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: White Hoodie
   m_EditorClassIdentifier: 
   id: 0
+  itemName: White Hoodie
   icon: {fileID: 21300000, guid: 731e72a557e4fa94e9103edece74b10e, type: 3}
   category: 1
-  type: 0
+  color: 0
   startingPrice: 0

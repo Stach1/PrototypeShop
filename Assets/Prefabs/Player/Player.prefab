@@ -1596,6 +1596,7 @@ GameObject:
   - component: {fileID: 5499549330443976922}
   - component: {fileID: 5499549330443976921}
   - component: {fileID: 5499549330443976923}
+  - component: {fileID: 232874324}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1694,6 +1695,22 @@ MonoBehaviour:
       m_Hash: 0
       m_Sprite: {fileID: 6769994815878223349, guid: b48bc97877e45a141bf654ff58cc4772, type: 3}
   m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 44b2b4524944c3f4c8afbfdce773560a, type: 3}
+--- !u!70 &232874324
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777517036531974244}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06916332, y: 1.8904643}
+  m_Size: {x: 1.5143957, y: 4.1661434}
+  m_Direction: 0
 --- !u!1 &6021789477206153171
 GameObject:
   m_ObjectHideFlags: 0
