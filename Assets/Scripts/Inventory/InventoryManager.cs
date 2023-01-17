@@ -7,9 +7,16 @@ public class InventoryManager : MonoBehaviour
     // Inventory Slots for UI
     [SerializeField]
     private InventorySlot[] _inventorySlots;
-    // The item prefab that includes the inventoryItem script
+
+    // Shop Slots for UI
     [SerializeField]
+    private InventorySlot[] _shopSlots;
+
+    // The item prefab that includes the inventoryItem
     public GameObject inventoryItemPrefab;
+
+    // The item prefab that includes the shopItem
+    public GameObject shopItemPrefab;
 
     [SerializeField]
     private Item[] _defaultClothes;
@@ -76,7 +83,32 @@ public class InventoryManager : MonoBehaviour
 
         // Takes the prefab's script and initialises the item
         InventoryItem inventoryItem = newItemObj.GetComponent<InventoryItem>();
-        inventoryItem.InitialiseItem(item);
+        inventoryItem.InitialiseItem(item, false);
+    }
+
+    // Spawns an item in the required slot
+    void SpawnShopItem(Item item, InventorySlot slot)
+    {
+        GameObject newItemObj;
+
+        // Creates item prefab in the slot position
+        newItemObj = Instantiate(shopItemPrefab, slot.transform);
+
+        // Takes the prefab's script and initialises the item
+        InventoryItem inventoryItem = newItemObj.GetComponent<InventoryItem>();
+        inventoryItem.InitialiseItem(item, true);
+  
+    }
+
+    public void SetShop(Item item)
+    {
+        // Will check every inventory slot
+        foreach (InventorySlot slot in _shopSlots)
+        {
+            // If the slot id is equals to item id, item is spawned
+            if (slot.id == item.id) SpawnShopItem(item, slot);
+        }
+
     }
 
     // For the inventory button

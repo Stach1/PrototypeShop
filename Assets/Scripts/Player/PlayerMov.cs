@@ -17,6 +17,9 @@ public class PlayerMov : MonoBehaviour
     // The vector for the inputs made by the player
     private Vector2 _movInput;
 
+    // Bool to stop movement in shop
+    public bool canMove = true;
+
     //Hashing animations for performance
     private static readonly int Idle = Animator.StringToHash("Idle");
     private static readonly int Walk = Animator.StringToHash("Walk");
@@ -26,6 +29,7 @@ public class PlayerMov : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
         _characterScale = transform.localScale;
+        canMove = true;
     }
 
     private void Update()
@@ -33,19 +37,24 @@ public class PlayerMov : MonoBehaviour
         // Quit the game button
         if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
 
-        MoveInput();
-        //Flips character!
-        Flip();
-        //Checks which state the animation is in and sets which animation that's gonna play
-        var state = AnimateState();
-        _anim.CrossFade(state, 0, 0);
-        
+        if (canMove)
+        {
+            MoveInput();
+            //Flips character!
+            Flip();
+
+            //Checks which state the animation is in and sets which animation that's gonna play
+            var state = AnimateState();
+            _anim.CrossFade(state, 0, 0);
+        }
+        else _anim.CrossFade("Idle", 0, 0);
+
     }
 
     private void FixedUpdate()
     {
         // Character movement
-        _rb.velocity = _movInput * _movSpeed;
+        _rb.velocity = canMove ? _movInput * _movSpeed : Vector2.zero;
     }
 
     private void MoveInput()
@@ -77,5 +86,10 @@ public class PlayerMov : MonoBehaviour
     public Vector2 GetInput()
     {
         return _movInput;
+    }
+
+    public void SetInput(bool move)
+    {
+        canMove = move;
     }
 }

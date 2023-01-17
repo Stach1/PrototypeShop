@@ -9,6 +9,8 @@ public class DialogueFadeOut : MonoBehaviour
     [SerializeField]
     private GameObject _closeButtonObj;
 
+    // Destroys the talk button and replaces it with the close menu button
+    // After that, destroys dialogue
     private void Awake()
     {
 
